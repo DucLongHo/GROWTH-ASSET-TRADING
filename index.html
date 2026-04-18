@@ -74,6 +74,15 @@
             background: linear-gradient(180deg, transparent, #0ea5e9, transparent);
             animation: beam-vertical 3s linear infinite;
         }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
     </style>
 </head>
 <body>
@@ -181,38 +190,90 @@
     <section id="portfolio">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4">Hồ Sơ Năng Lực</h2>
-                <p class="text-slate-400">Minh chứng cho hiệu suất và sự chuẩn xác của công nghệ qua các hình ảnh thực tế.</p>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">BOT Products</h2>
+                <p class="text-slate-400">Minh chứng cho hiệu suất và sự chuẩn xác của công nghệ qua các sản phẩm thực tế.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <!-- Case Study 1 -->
-                <div class="portfolio-card group bg-slate-900 border border-slate-800 rounded-[2rem] overflow-hidden shadow-2xl">
-                    <div class="relative overflow-hidden h-64 md:h-80">
-                        <img src="https://ftmo-frontend-prod.storage.googleapis.com/wp-content/uploads/2022/02/04165757/FTMO-Quick-Trade-Manager-2.jpg" alt="Báo cáo MetaTrader 5" class="portfolio-img w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
-                        <div class="absolute top-4 left-4 bg-sky-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">Backtest Verified</div>
+                    <!-- Case Study 1 -->
+                    <div class="portfolio-card group bg-slate-900 border border-slate-800 rounded-[2rem] overflow-hidden shadow-2xl">
+                        <div class="relative flex-1 bg-gradient-to-br from-sky-500/10 to-indigo-500/10 flex items-center justify-center min-h-[320px]">
+                        
+                        <!-- Abstract Robot/Bot Visual -->
+                        <div class="animate-float relative z-10 w-64 h-64 bg-slate-900 rounded-[3rem] border-4 border-sky-400 shadow-[0_0_50px_rgba(56,189,248,0.3)] flex items-center justify-center overflow-hidden">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-sky-400 to-transparent"></div>
+                            <div class="text-8xl text-sky-400">
+                            <i class="fas fa-robot"></i>
+                            </div>
+                            
+                            <!-- Floating Message Bubbles -->
+                            <div class="absolute top-4 left-4 bg-white/10 backdrop-blur-md p-2 rounded-lg text-[10px] text-white border border-white/20 animate-pulse">
+                                Hello World!
+                            </div>
+                            <div class="absolute bottom-8 right-4 bg-sky-500/20 backdrop-blur-md p-2 rounded-lg text-[10px] text-sky-200 border border-sky-400/30">
+                                Dịch: Xin chào thế giới!
+                            </div>
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-sky-500/10 rounded-full blur-[80px]"></div>
+                        <div class="absolute top-10 right-10 text-sky-400/20 text-6xl rotate-12">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="absolute bottom-10 left-10 text-indigo-400/20 text-6xl -rotate-12">
+                            <i class="fas fa-language"></i>
+                        </div>
+                    <div class="absolute top-4 left-4 bg-sky-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">Bot Support</div>
                     </div>
                     <div class="p-8">
-                        <span class="text-sky-400 text-sm font-bold uppercase tracking-wider">Case Study: Prop Firm Guard</span>
-                        <h3 class="text-2xl font-bold mt-2 mb-4 text-slate-100">Hệ thống bảo vệ quỹ 100K FTMO</h3>
-                        <p class="text-slate-400 mb-6 text-sm leading-relaxed italic border-l-2 border-sky-500 pl-4">"Công cụ kiểm soát Drawdown được code riêng để đáp ứng luật chơi khắc nghiệt của các quỹ cấp vốn."</p>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="text-center bg-slate-800/50 p-4 rounded-2xl">
-                                <div class="text-sky-400 font-bold text-lg">5%</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold">Max Drawdown</div>
+                        <span class="text-sky-400 text-sm font-bold uppercase tracking-wider">Case Study: Bot Forwarding Telegram</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4 text-slate-100">Tự động hóa kênh Tele của bạn</h3>
+
+                        
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed italic border-l-2 border-sky-500 pl-4">
+                            "Chuyển tiếp tin nhắn 1-đến-nhiều & Dịch thuật đa ngôn ngữ thời gian thực. 
+                             Giải pháp tối ưu cho Admin Group toàn cầu."
+                        </p>
+
+                        <!-- Features List -->
+                        <div class="grid grid-cols-1 gap-4 mb-3 sm:grid-cols-2">
+                            <div class="flex items-center space-x-3 text-slate-200">
+                                <div class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                                    <i class="fas fa-check text-[10px]"></i>
+                                </div>
+                                <span class="text-sm font-semibold">Forwarding 1-N</span>
                             </div>
-                            <div class="text-center bg-slate-800/50 p-4 rounded-2xl">
-                                <div class="text-emerald-400 font-bold text-lg">12.5%</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold">Net Profit</div>
+                            <div class="flex items-center space-x-3 text-slate-200">
+                                <div class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                                    <i class="fas fa-check text-[10px]"></i>
+                                </div>
+                                <span class="text-sm font-semibold">Dịch thuật AI</span>
                             </div>
-                            <div class="text-center bg-slate-800/50 p-4 rounded-2xl">
-                                <div class="text-indigo-400 font-bold text-lg">99.9%</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold">Precision</div>
+                            <div class="flex items-center space-x-3 text-slate-200">
+                                <div class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                                    <i class="fas fa-check text-[10px]"></i>
+                                </div>
+                                <span class="text-sm font-semibold">Tốc độ tức thì</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-200">
+                                <div class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                                    <i class="fas fa-check text-[10px]"></i>
+                                </div>
+                                <span class="text-sm font-semibold">Dễ thiết lập</span>
+                            </div>
+                        </div>
+                        <!-- CTA Section -->
+                        <div class="flex flex-col justify-end space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                            <div class="flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-10 w-10 rounded-full ring-3 ring-slate-800" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User">
+                                <img class="inline-block h-10 w-10 rounded-full ring-3 ring-slate-800" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" alt="User">
+                                <img class="inline-block h-10 w-10 rounded-full ring-3 ring-slate-800" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jack" alt="User">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-slate-1000 text-xs text-white ring-3 ring-slate-800 font-bold">
+                                    +1K
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Case Study 2 -->
                 <div class="portfolio-card group bg-slate-900 border border-slate-800 rounded-[2rem] overflow-hidden shadow-2xl">
                     <div class="relative overflow-hidden h-64 md:h-80">
