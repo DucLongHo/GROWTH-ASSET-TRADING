@@ -93,7 +93,7 @@ GROWTH-ASSET-TRADING/
 - Subheadline: value prop về custom trading bot
 - CTAs: "Bắt Đầu Ngay" (primary) + "Xem Kết Quả" (secondary ghost)
 - Background: faint grid pattern + orange radial glow top-right
-- `.hero-chart`: `max-width: 480px`, `padding: 1.75rem`; `.hero-visual`: `justify-content: center`
+- `.hero-chart`: `max-width: 480px`, `padding: 1.75rem`; `.hero-visual`: `flex-direction: column`, `justify-content: center`
 
 ### 3. `#exchanges` — Supported Brokers
 - Label: "TÍCH HỢP VỚI CÁC BROKER HÀNG ĐẦU"

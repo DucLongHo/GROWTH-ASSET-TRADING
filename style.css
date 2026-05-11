@@ -72,6 +72,10 @@ button {
   --purple-glow: rgba(108, 92, 231, 0.15);
   --success: #00c896;
   --red: #ff5f5f;
+  --purple-light: #a29bfe;
+  --purple-dim: rgba(107, 63, 160, 0.15);
+  --purple-border: rgba(107, 63, 160, 0.2);
+  --sub-heading: 'Space Grotesk', -apple-system, sans-serif;
   --nav-height: 64px;
   --container: 1200px;
   --radius: 12px;
@@ -358,8 +362,9 @@ section {
 }
 
 .nav-link {
+  font-family: var(--sub-heading);
   font-size: 0.875rem;
-  color: var(--text-secondary);
+  color: var(--purple-light);
   font-weight: 500;
   transition: color 0.2s;
 }
@@ -449,7 +454,8 @@ section {
   overflow: hidden;
   min-height: 90vh;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-bg-grid {
@@ -521,6 +527,31 @@ section {
   padding: 1.75rem;
   width: 100%;
   max-width: 480px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 7px 12px;
+  background: var(--purple-dim);
+  border: 1px solid var(--purple-border);
+  border-radius: 100px;
+  font-family: var(--sub-heading);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple-light);
+  letter-spacing: 0.02em;
+  margin-bottom: 36px;
+  width: fit-content;
+}
+
+.hero-badge .dot {
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
 }
 
 .chart-line {
@@ -1128,6 +1159,7 @@ section {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 0.15rem;
+  font-family: var(--sub-heading);
 }
 
 .process-content h3 {
