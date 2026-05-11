@@ -878,15 +878,15 @@ section {
 }
 
 .benefit-icon {
-  width: 44px;
-  height: 44px;
-  background: var(--accent-glow);
-  border: 1px solid rgba(245, 166, 35, 0.2);
-  border-radius: var(--radius-sm);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  border-radius: 12px;
+  background: var(--purple-dim);
+  border: 1px solid var(--purple-border);
 }
 
 .benefit-icon svg {
@@ -1157,7 +1157,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--purple-light);
   margin-bottom: 0.15rem;
   font-family: var(--sub-heading);
 }
